@@ -1,0 +1,293 @@
+
+
+*{
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.container{
+    max-width: 78rem;
+}
+
+.home-page{
+    background-color: #5A20CB;
+    height: 100vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.navbar{
+    display: flex;
+    align-content: space-between;
+    
+}
+
+.list-items{
+    display: flex;
+    align-items: center;
+}
+
+.list-item{
+    margin-right: 30px;
+    list-style: none;
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+.logo{
+    margin-top: 30px;
+}
+
+.active::after{
+    content: "";
+    background-color: indianred;
+    height: 2px;
+    width: 40px;
+    z-index: 6;
+    display: block;
+}
+.active{
+    color: skyblue;
+}
+
+.btn{
+    background-color: skyblue;
+    padding: 10px 25px;
+    border-style: none;
+}
+
+.home{
+    
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+ 
+}
+
+
+
+.left-home h1{
+font-size: 60px;
+font-family: serif;
+color: white;
+}
+
+.left-home p{
+    font-size: 18px;
+
+margin-top: 30px;
+color: rgb(140, 137, 137);
+}
+.right-home img{
+    height: 450px;
+    width: 500px;
+    object-fit: cover
+    
+}
+
+
+@media only screen and (max-width:900px) {
+
+
+    .home-page{
+        position: relative;
+    }
+    .right-home{
+        position: absolute;
+        z-index: 1;
+        opacity: 0.2;
+        
+    }
+    
+    .right-home img{
+        width: 400px;
+    }
+
+    .left-home{
+        width: 400px;
+        justify-content: center;
+    }
+
+    .left-home h1{
+        font-size: 45px;
+    }
+    .left-home p{
+        color: white;
+    }
+
+    .navbar {
+        overflow-y: auto;
+    }
+
+    .nav-items{
+
+        gap: 10px;
+    }
+    .list-item{
+        font-size: 15px;
+    }
+    
+
+
+}
+
+/* info ---section */
+
+.info{
+    display: flex;
+    max-width: 76rem;
+    margin-top: 70px;
+
+}
+
+.left-info img {
+    height: 650px;
+    width: 600px;
+     
+}
+.right-info{
+    margin-top: 50px;
+}
+
+.right-head h1{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.info-body li{
+    list-style: none;
+    margin-top: 25px;
+    text-align: justify;
+    
+}
+
+.info-body h2 i{
+    display: inline;
+}
+.info-body li:first-child h2 i{
+    color: orange;
+}
+
+.info-body li:nth-child(2) h2 i{
+    color: green;
+}
+.info-body li:nth-child(3) h2 i{
+    color: skyblue;
+}
+
+.info-body p{
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width:900px) {
+
+    .info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .left-info img{
+        width: 300px;
+        height: 350px;
+
+    }
+
+    .right-info{
+        width: 350px;
+    }
+
+    .right-head h1{
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+
+
+/* ......... card- section......... */
+
+.card-section{
+    max-width: 76rem;
+    margin-top: 50px;
+    height: 500px;
+
+}
+
+.card-head{
+    font-size: 35px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.cards-body{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 12rem;
+    padding-left: 0px;
+    background-color: transparent;
+    background-position: center;
+    box-shadow: 5px 10px 5px black;
+    height: 18rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+
+.icon{
+    height: 100px;
+    width: 100px;
+    
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin:40px
+}
+.card h2{
+text-align: center;
+/* margin-left: -70px; */
+position: relative;
+}
+.card p{
+text-align: center;
+
+margin: 20px auto;
+}
+
+.card1{
+    color: white;
+}
+.card1 h2::before{
+    content: "";
+    z-index: -2;
+    position: absolute;
+    background-color: #5A20CB;
+    width: 12.1rem;
+    height: 110px;
+    margin-left: -46px;
+    /* padding-left: 35px; */
+    border-radius: 25px;
+}
+
+
+@media only screen and (max-width:700px) {
+    .card-head h2{
+        font-size: 30px ;
+    }
+}
